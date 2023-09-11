@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000; // Choose a suitable port
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
   // Retrieve query parameters
   const slackName = req.query.slack_name;
   const track = req.query.track;
